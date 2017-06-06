@@ -1,0 +1,46 @@
+﻿<div align="center"><html> 
+<head> 
+<meta charset=utf8>
+<title> Введення даних </title> </head> 
+<body> 
+<FORM ACTION="action.php" METHOD="POST"> 
+
+<style> 
+body { background: url(img/1_RIDGE.jpg);
+-moz-background-size: 100%; 
+-webkit-background-size: 100%; 
+-o-background-size: 100%; 
+background-size: 100%; 
+} 
+</style> 
+<H1> Транспортна система міста </h1> 
+<p> Місто <input type = text name=misto maxlength = 50> </p> 
+<p> Вид транспорту <input type = text name=vid_transporty maxlength = 50> </p> 
+<p> Перевізник </p> 
+<input type=radio name=vid_transporty  value="Avtobus" checked>Avtobus
+<input type=radio name=vid_transporty value="Rejsovij" checked>Rejsovij
+<H1> Характиристика </h1> 
+<p> Дата відправлення транспорту 
+<select name=data_vidpravlenja_nhfycgjhne" size="1"> 
+<option value="first">2017-01-11</option> 
+<option value="second">2017-01-12</option> 
+<option value="third">2017-01-13</option> 
+<option value="fourth">2017-01-14</option> 
+<option value="five">2017-01-15</option> 
+<option value="six">2017-01-16</option> 
+</select></p> 
+<p> Відгуки пасажирів </p> 
+<p><textarea name=vidgyki_pasagiriv rows=5 cols=30> </textarea> </p>
+<p> Якість перевезення <input type=text name=jakist_perevezenja = 50> </p> 
+<H1> Час відправлення </h1> 
+<p> Місто <input type = text name=misto maxlength = 50> </p> 
+<p> Транспорт <input type = text name=transport maxlength = 50> </p> 
+<INPUT type="submit" value="Записати">
+<input type="reset" value="Скинути дані поля" id="button"/><br>
+</FORM>
+<form action="result.php" method="POST">
+<INPUT type="submit" value="Показати дані">
+</form>
+</CENTER>
+</BODY>
+</HTML>
